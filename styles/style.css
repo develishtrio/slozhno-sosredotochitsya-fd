@@ -1,5 +1,128 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: auto;
+  color: var(--body-text-color);
+  font-family: var(--main-font), monospace;
+  font-weight: var(--font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  background-color: var(--main-bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: center;
+  padding: var(--main-padding);
+}
+
+.decorated-zone {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inset: var(--main-padding);
+  border-top: 1px solid var(--button-color);
+  border-left: 1px solid var(--button-color);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inset: var(--main-padding);
+  border-top: 1px solid var(--button-color);
+  border-left: 1px solid var(--button-color);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 1.5px 13px;
+  color: var(--button-color);
+  text-align: center;
+  text-transform: var(--button-text-transform);
+  background-color: transparent;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover);
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--button-color);
+  outline: none;
+}
+
+/*
+.header__theme-menu-button:active {
+  outline: 1px solid var(--button-color);
+} */
+
+.header__title {
+  color: var(--header-color);
+  font-weight: var(--bold-font-weight);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.header__subtitle {
+  justify-self: end;
+  align-self: center;
+  width: 100%;
+}
+
+.rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .rec {
+    position: absolute;
+    top: var(--main-padding);
+    display: inline-block;
+    margin-right: calc(var(--main-padding) + 28px);
+  }
+
+  .rec::before {
+    content: "REC";
+    color: var(--button-color);
+  }
+
+  .rec::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -18px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 4px var(--button-color);
+    color: var(--button-color);
+    background-color: var(--button-color);
+    block-size: 5px;
+    inline-size: 5px;
+  }
 }
