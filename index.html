@@ -24,13 +24,13 @@
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
+             type="button" class="header__theme-menu-button header__theme-menu-button_type_light"
             >
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
@@ -38,7 +38,7 @@
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
               Неон
@@ -49,7 +49,7 @@
       <h1 class="header__title">no focus</h1>
       <p class="header__subtitle">Что делать, когда не можешь делать ничего
       Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
-      <span class="rec">rec</span>
+      <span aria-hidden="true" class="rec"></span> <!--Пустой тег для декоративного элемента в темной теме -->
     </header>
     <!-- Основной контент страницы и первая секция -->
     <main class="page__main">
@@ -167,11 +167,11 @@
         <article class="main-content__article">
           <h2 class="main-content__title">А можно в картинках?</h2>
           <div class="visuals__gallery">
-            <img class="visuals__image" src="./images/sunset.png" alt="">
-            <img class="visuals__image" src="./images/ice-cream.png" alt="">
-            <img class="visuals__image" src="./images/tape.png" alt="">
-            <img class="visuals__image" src="./images/books.png" alt="">
-            <img class="visuals__image" src="./images/street.png" alt="">
+            <img class="visuals__image" src="./images/sunset.png" alt="изображение заката в розовых тонах">
+            <img class="visuals__image" src="./images/ice-cream.png" alt="мультяшное изображение шариков мороженого в розовых оттенках">
+            <img class="visuals__image" src="./images/tape.png" alt="изображение кассеты в фиолетовых тонах">
+            <img class="visuals__image" src="./images/books.png" alt="мультяшное изображение стопки книг в розовых оттенках">
+            <img class="visuals__image" src="./images/street.png" alt="иллюстрация улицы в розовых оттенках">
           </div>
         </article>
       </section>
