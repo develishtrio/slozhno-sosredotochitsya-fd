@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  margin: auto;
+  margin: 0 auto;
   color: var(--body-text-color);
   font-family: var(--main-font), monospace;
   font-weight: var(--font-weight);
@@ -82,7 +82,7 @@
   outline: 1px solid var(--button-color);
 } */
 
-.header__title {
+.header__title, .footer__title {
   color: var(--header-color);
   font-weight: var(--bold-font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -124,5 +124,159 @@
     background-color: var(--button-color);
     block-size: 5px;
     inline-size: 5px;
+  }
+}
+
+.content {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--main-page-gap);
+}
+
+.main-content__title {
+  color: var(--main-content-color);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+
+.main-content__articles {
+  display: grid;
+  gap: var(--main-page-gap);
+}
+
+.header__subtitle {
+  color: var(--article-main-color);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--main-line-height);
+  background-color: var(--page-bg-color);
+}
+
+.main-content__article {
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: 10px;
+  font-weight: var(--font-weight);
+}
+
+.main-content__articles > .article__title {
+  color: var(--article-main-color);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--main-line-height);
+  background-color: var(--page-bg-color);
+}
+
+.page__focus-tips {
+  font-weight: var(--font-weight);
+}
+
+.content__description {
+  color: var(--article-main-color);
+  font-weight: var(--font-weight);
+  line-height: var(--main-line-height);
+  background-color: var(--page-bg-color);
+}
+
+.article__text {
+  color: var(--body-text-color);
+  font-weight: var(--font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+
+.content__title {
+  color: var(--article-main-color);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  background-color: var(--page-bg-color);
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--link-color);
+}
+
+.link:hover {
+  outline: none;
+  border-bottom: 1px solid var(--body-text-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--body-text-color);
+}
+
+.visuals__gallery {
+  display: grid;
+  gap: var(--main-padding);
+}
+
+.visuals__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--main-padding);
+}
+
+/* */
+@media (width >= 768px) {
+  :root {
+    --main-padding: 20px;
+    --padding-block: 60px;
+    --main-page-gap: 80px;
+  }
+
+  .page__focus-challenges, .page__focus-tips {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .page__concentration-factors, .main-content__title {
+    width: calc(100% / 3 - var(--main-content-gap));
+  }
+
+  .page__focus-visuals, .main-content__article {
+    gap: 20px;
+  }
+
+  .header__title {
+    justify-self: left;
+    margin-left: -10px;
+  }
+
+  .page__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__subtitle {
+    width: calc(100% / 2);
+  }
+
+  .visuals__image:first-child {
+    grid-column: span 2;
+  }
+
+  .visuals__image:nth-child(2) {
+    grid-row: span 2;
+  }
+
+  .visuals__image:nth-child(3) {
+    grid-row: span 3;
+  }
+
+  .visuals__image:nth-child(5) {
+    grid-row: 3/3;
+    grid-column: 2/4;
   }
 }

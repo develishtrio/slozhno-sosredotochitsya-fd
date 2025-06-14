@@ -46,14 +46,14 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">no focus</h1>
+      <h1 class="header__title page__title">no focus</h1>
       <p class="header__subtitle">Что делать, когда не можешь делать ничего
       Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
       <span aria-hidden="true" class="rec"></span> <!--Пустой тег для декоративного элемента в темной теме -->
     </header>
     <!-- Основной контент страницы и первая секция -->
     <main class="page__main">
-      <section class="page__focus-challenges">
+      <section class="content page__focus-challenges">
         <h2 class="main-content__title">Почему сосредоточиться так сложно</h2>
         <div class="main-content__articles">
           <article class="main-content__article">
@@ -61,7 +61,7 @@
             <p class="article__text">
               Особенно сложно сосредоточиться, когда задач много и все они — важные. 
               Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? 
-              А дело в том, что её просто не существует. Исследователи выяснили, что мозгу 
+              А дело в том, что её просто не существует. Исследователи <a class="link" target="_blank" href="https://dana.org/news-and-insights/">выяснили</a> , что мозгу 
               тяжело концентрироваться даже на двух делах одновременно. 
               А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». 
               Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
@@ -80,7 +80,7 @@
         </div>
       </section>
       <!-- Вторая секция про концентрацию -->
-       <section class="page__concentration-factors">
+       <section class="content page__concentration-factors">
         <h2 class="main-content__title">Что снижает концентрацию внимания?</h2>
         <div class="main-content__articles">
           <article class="main-content__article">
@@ -113,12 +113,12 @@
         </div>
       </section>
       <!--Третья секция с советами -->
-      <section class="page__focus-tips">
+      <section class="content page__focus-tips">
         <h2 class="main-content__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         <div class="main-content__articles">
           <h3 class="article__title">5 простых (на самом деле не очень) советов</h3>
           <article class="main-content__article">
-            <h4 class="">Представьте небо и облака</h4>
+            <h4 class="content__description">Представьте небо и облака</h4>
             <p class="article__text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. 
               Ведь часто именно тревожные мысли о сложных задачах как раз и мешают эти сложные задачи делать.
@@ -128,7 +128,7 @@
             </p>
           </article>
           <article class="main-content__article">
-            <h4 class="">Включите музыку</h4>
+            <h4 class="content__description">Включите музыку</h4>
             <p class="article__text">
               Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями,
                которые тоже очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная.
@@ -136,16 +136,16 @@
             </p>
           </article>
           <article class="main-content__article">
-            <h4 class="">Прогуляйтесь</h4>
+            <h4 class="content__description">Прогуляйтесь</h4>
             <p class="article__text">
-              Или даже пробегитесь. Лучше найти парк или лес: один эксперимент показал, что созерцание природы повышает концентрацию, 
+              Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a class="link" target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, что созерцание природы повышает концентрацию, 
               в то время как после просмотра городских пейзажей она наоборот понижается. 
               Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. 
               Но и простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </article>
           <article class="main-content__article">
-            <h4 class="">Хорошо ешьте</h4>
+            <h4 class="content__description">Хорошо ешьте</h4>
             <p class="article__text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют резким скачкам сахара в крови. 
               Например, с высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль), 
@@ -153,7 +153,7 @@
             </p>
           </article>
           <article class="main-content__article">
-            <h4 class="">Читайте</h4>
+            <h4 class="content__description">Читайте</h4>
             <p class="article__text">
               Настоящие бумажные книги. Это правда помогает с концентрацией: 
               чтобы прочитать пост в соцсети, достаточно нескольких минут или даже секунд. 
@@ -165,20 +165,20 @@
       <!-- Четвертая секция с картинками -->
       <section class="page__focus-visuals">
         <article class="main-content__article">
-          <h2 class="main-content__title">А можно в картинках?</h2>
+          <h2 class="content__title">А можно в картинках?</h2>
           <div class="visuals__gallery">
-            <img class="visuals__image" src="./images/sunset.png" alt="изображение заката в розовых тонах">
-            <img class="visuals__image" src="./images/ice-cream.png" alt="мультяшное изображение шариков мороженого в розовых оттенках">
-            <img class="visuals__image" src="./images/tape.png" alt="изображение кассеты в фиолетовых тонах">
-            <img class="visuals__image" src="./images/books.png" alt="мультяшное изображение стопки книг в розовых оттенках">
-            <img class="visuals__image" src="./images/street.png" alt="иллюстрация улицы в розовых оттенках">
+            <img class="visuals__image" loading="lazy" src="./images/sunset.png" alt="изображение заката в розовых тонах">
+            <img class="visuals__image" loading="lazy" src="./images/ice-cream.png" alt="мультяшное изображение шариков мороженого в розовых оттенках">
+            <img class="visuals__image" loading="lazy" src="./images/tape.png" alt="изображение кассеты в фиолетовых тонах">
+            <img class="visuals__image" loading="lazy" src="./images/books.png" alt="мультяшное изображение стопки книг в розовых оттенках">
+            <img class="visuals__image" loading="lazy" src="./images/street.png" alt="иллюстрация улицы в розовых оттенках">
           </div>
         </article>
       </section>
     </main>
     <!-- Подвал сайта -->
     <footer class="page__footer decorated-zone">
-      <h2 class="footer__title">focus</h2>
+      <h2 class="footer__title page__title">focus</h2>
     </footer>
   </body>
 </html>

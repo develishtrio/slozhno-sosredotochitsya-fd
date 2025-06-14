@@ -19,13 +19,13 @@
   --header-color: #db00ff;
   --button-color: #ff0070;
   --button-hover: #ff007066;
-  --section-color: #ff0070;
+  --main-content-color: #ff0070;
   --article-main-color: #000028;
-  --article-bg-color: #ff0070;
+  --page-bg-color: #ff0070;
   --link-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
 
   --main-padding: 10px;
   --padding-block: 40px;
-  --main-section-gap: 50px;
+  --main-page-gap: 50px;
 }
