@@ -3,10 +3,10 @@
 .page {
   margin: 0 auto;
   color: var(--body-text-color);
-  font-family: var(--main-font), monospace;
+  font-family: var(--font-family), monospace;
   font-weight: var(--font-weight);
   font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
   background-color: var(--main-bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -134,10 +134,10 @@
 }
 
 .main-content__title {
-  color: var(--main-content-color);
+  color: var(--content-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
 }
 
 .main-content__articles {
@@ -146,9 +146,9 @@
 }
 
 .header__subtitle {
-  color: var(--article-main-color);
+  color: var(--title-article-color);
   font-weight: var(--bold-font-weight);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
 
@@ -160,9 +160,9 @@
 }
 
 .main-content__articles > .article__title {
-  color: var(--article-main-color);
+  color: var(--title-article-color);
   font-weight: var(--bold-font-weight);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
 
@@ -171,9 +171,9 @@
 }
 
 .content__description {
-  color: var(--article-main-color);
+  color: var(--title-article-color);
   font-weight: var(--font-weight);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
 
@@ -181,14 +181,14 @@
   color: var(--body-text-color);
   font-weight: var(--font-weight);
   font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
 }
 
 .content__title {
-  color: var(--article-main-color);
+  color: var(--title-article-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
+  line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
 

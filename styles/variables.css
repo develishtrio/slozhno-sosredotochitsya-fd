@@ -4,7 +4,7 @@
 */
 
 :root {
-  --main-font: IBM Plex Mono, monospace;
+  --font-family: IBM Plex Mono, monospace;
   --main-font-size: 18px;
   --main-line-height: 130%;
   --header-gap: 20px;
@@ -19,8 +19,9 @@
   --header-color: #db00ff;
   --button-color: #ff0070;
   --button-hover: #ff007066;
-  --main-content-color: #ff0070;
-  --article-main-color: #000028;
+ /* --main-content-color: #ff0070; */
+ --title-section-color: #ff0070;
+ --title-article-color: #000028;
   --page-bg-color: #ff0070;
   --link-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
