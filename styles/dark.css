@@ -5,7 +5,6 @@
 */
 
 :root.theme-dark {
-  .page {
   --body-text-color: #f1b2ce;
   --main-bg-color: #000028;
   --header-color: #db00ff;
@@ -16,7 +15,6 @@
   --page-bg-color: #ff0070;
   --link-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
-  }
 }
 
 .theme-dark .page {
@@ -30,4 +28,8 @@
   --page-bg-color: #ff0070;
   --link-color: #ff0070;
   --bg-image: url("../images/cover-image-dark.png");
+}
+
+.theme-dark .rec {
+  display: inline-block;
 }

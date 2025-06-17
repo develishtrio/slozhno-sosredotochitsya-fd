@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --body-text-color: #353430;
-  --main-bg-color: #ffc2e6;;
+  --main-bg-color: #fff1f7;
   --header-color: #ffc2e6;
   --button-color: #353430;
   --button-hover: #32312d66;
@@ -24,7 +24,7 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   --body-text-color: #353430;
-  --main-bg-color: #ffc2e6;;
+  --main-bg-color: #fff1f7;
   --header-color: #ffc2e6;
   --button-color: #353430;
   --button-hover: #32312d66;
@@ -33,4 +33,23 @@
   --page-bg-color: #ff8dcb;
   --link-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --body-text-color: #353430;
+    --main-bg-color: #fff1f7;
+    --header-color: #ffc2e6;
+    --button-color: #353430;
+    --button-hover: #32312d66;
+    --title-section-color: #353430;
+    --title-article-color: #1a1813;
+    --page-bg-color: #ff8dcb;
+    --link-color: #ff8dcb;
+    --bg-image: url(../images/cover-image-light.png);
+  }
+}
+
+.theme-light .rec {
+  display: none;
 }
