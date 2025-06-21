@@ -30,28 +30,30 @@
   height: 100vh;
   min-height: 668px;
 }
-
+/* правый уголок */
 .decorated-zone::before {
   content: "";
   position: absolute;
+ /* top: 0;
+  right: 0; */
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid var(--button-color);
+  border-right: 2px solid var(--button-color);
   inset: var(--main-padding);
-  display: block;
   justify-self: end;
-  border: 2px solid var(--button-color);
-  border-bottom: none;
-  border-left: none;
-  inline-size: 25px;
-  block-size: 25px;
+  
 }
-
+/* левый уголок */
 .decorated-zone::after {
-  /*content: "";
+  content: "";
   position: absolute;
-  border-top: 1px solid var(--button-color);
-  border-left: 1px solid var(--button-color);
-  inset-inline-start: var(--main-padding);
-  inline-size: 25px;
-  block-size: 25px; */
+  bottom: 0;
+  left: 0; 
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid var(--button-color);
+  border-left: 2px solid var(--button-color);
 }
 
 .header__theme-menu {
