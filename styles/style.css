@@ -2,7 +2,6 @@
 
 .page {
   margin: 0 auto;
-  padding: var(--main-padding);
   color: var(--body-text-color);
   font-family: var(--font-family), monospace;
   font-weight: var(--font-weight);
@@ -21,7 +20,8 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
-  padding: var(--main-padding);
+  padding: var(--main-padding); 
+  
 }
 
 .decorated-zone {
@@ -37,19 +37,21 @@
   justify-self: end;
   width: 20px;
   height: 20px;
-  border-top: 2px solid var(--button-color);
-  border-right: 2px solid var(--button-color);
+  border-top: 1px solid var(--button-color);
+  border-right: 1px solid var(--button-color);
 }
 /* левый уголок */
 .decorated-zone::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; 
   width: 20px;
   height: 20px;
-  border-bottom: 2px solid var(--button-color);
-  border-left: 2px solid var(--button-color);
+  border-bottom: 1px solid var(--button-color);
+  border-left: 1px solid var(--button-color);
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .header__theme-menu {
@@ -84,10 +86,10 @@
   outline: none;
 }
 
-/*
+
 .header__theme-menu-button:active {
   outline: 1px solid var(--button-color);
-} */
+} 
 
 .header__title,
 .footer__title {
@@ -97,14 +99,20 @@
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
-
+/* подзаголовок хедера */
 .header__subtitle {
   justify-self: end;
   align-self: center;
   width: 100%;
+}
+
+.title-decor {
   color: var(--title-article-color);
   font-weight: var(--bold-font-weight);
+  line-height: var(--line-height);
   background-color: var(--page-bg-color);
+  font-family: var(--font-family);
+  font-size: var(--main-font-size);
 }
 
 .rec {
@@ -146,6 +154,7 @@
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--line-height);
+  margin: -1px;
 }
 
 .main-content__articles {
@@ -182,6 +191,10 @@
   line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
+/*
+.article__title {
+  margin-top: -2px;
+} */
 
 .article__text {
   color: var(--body-text-color);
@@ -195,13 +208,6 @@
   color: var(--title-article-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
-  line-height: var(--line-height);
-  background-color: var(--page-bg-color);
-}
-
-.title-decor {
-  color: var(--title-article-color);
-  font-weight: var(--bold-font-weight);
   line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
