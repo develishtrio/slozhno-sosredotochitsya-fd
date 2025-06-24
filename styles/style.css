@@ -259,7 +259,7 @@
   }
   .page__concentration-factors,
   .main-content__title {
-    width: calc(100% / 3% - var(--header-gap));
+    width: calc(100 / 3 - var(--header-gap));
   }
 
   .page__focus-visuals .main-content__article {
