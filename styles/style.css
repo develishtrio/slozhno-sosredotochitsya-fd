@@ -1,5 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   margin: 0 auto;
   color: var(--body-text-color);
@@ -20,8 +19,7 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
-  padding: var(--main-padding); 
-  
+  padding: var(--main-padding);
 }
 
 .decorated-zone {
@@ -30,28 +28,29 @@
   min-height: 668px;
 }
 /* правый уголок */
+
 .decorated-zone::before {
   content: "";
   position: absolute;
   inset: var(--main-padding);
   justify-self: end;
-  width: 20px;
-  height: 20px;
   border-top: 1px solid var(--button-color);
   border-right: 1px solid var(--button-color);
+  inline-size: 25px;
+  block-size: 25px;
 }
 /* левый уголок */
 .decorated-zone::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0; 
-  width: 20px;
-  height: 20px;
+  left: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
   border-bottom: 1px solid var(--button-color);
   border-left: 1px solid var(--button-color);
-  margin-left: 10px;
-  margin-bottom: 10px;
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .header__theme-menu {
@@ -86,17 +85,18 @@
   outline: none;
 }
 
-
 .header__theme-menu-button:active {
   outline: 1px solid var(--button-color);
-} 
+}
 
-.header__title,
-.footer__title {
+.page__title {
   color: var(--header-color);
   font-weight: var(--bold-font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
+}
+
+.header__title {
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
 /* подзаголовок хедера */
@@ -108,13 +108,13 @@
 
 .title-decor {
   color: var(--title-article-color);
+  font-family: var(--font-family);
   font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
   line-height: var(--line-height);
   background-color: var(--page-bg-color);
-  font-family: var(--font-family);
-  font-size: var(--main-font-size);
 }
-
+/* Рек + лампочка */
 .rec {
   position: absolute;
   top: var(--main-padding);
@@ -139,31 +139,29 @@
   block-size: 5px;
   inline-size: 5px;
 }
+/* Главная секция */
 .page__main {
-  padding: var(--main-padding);
+  display: grid;
+  gap: var(--main-page-gap);
+  padding: var(--padding-block) var(--main-padding);
 }
-
+/* section */
 .content {
   display: grid;
   grid-auto-flow: row;
-  gap: var(--header-gap);
+  gap: var(--main-content-gap);
 }
 
 .main-content__title {
-  color: var(--content-color);
+  color: var(--title-section-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--line-height);
-  margin: -1px;
 }
 
 .main-content__articles {
   display: grid;
-  gap: 20px;
-}
-
-.page__concentration-factors {
-  margin-top: var(--main-page-gap);
+  gap: var(--main-content-gap);
 }
 
 .main-content__article {
@@ -181,7 +179,6 @@
 }
 
 .page__focus-tips {
-  margin-top: 80px;
   font-weight: var(--font-weight);
 }
 
@@ -191,10 +188,6 @@
   line-height: var(--line-height);
   background-color: var(--page-bg-color);
 }
-/*
-.article__title {
-  margin-top: -2px;
-} */
 
 .article__text {
   color: var(--body-text-color);
@@ -202,9 +195,8 @@
   font-size: var(--main-font-size);
   line-height: var(--line-height);
 }
-
+/* заголовок галерери !!! */
 .content__title {
-  margin-top: 79px;
   color: var(--title-article-color);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
@@ -236,7 +228,6 @@
 }
 
 .visuals__image {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -250,6 +241,10 @@
   padding: var(--main-padding);
 }
 
+.footer__title {
+  text-shadow: 2px 2px 0 var(--shadow-color);
+}
+
 /* */
 @media (width >= 768px) {
   :root {
@@ -258,23 +253,23 @@
     --main-page-gap: 80px;
   }
 
-  .text__concentration-factors {
-    gap: 20px;
-  }
-
   .page__focus-challenges,
   .page__focus-tips {
     grid-template-columns: 1fr 2fr;
   }
+  .page__concentration-factors,
+  .main-content__title {
+    width: calc(100% / 3% - var(--header-gap));
+  }
 
-  .page__focus-visuals,
-  .main-content__article {
-    gap: 10px;
+  .page__focus-visuals .main-content__article {
+    gap: 20px;
   }
 
   .header__title {
     justify-self: left;
-    margin-left: -10px;
+    /*  margin-left: -10px; */
+    margin-inline-start: calc(-1 * var(--main-padding));
   }
 
   .page__title {
@@ -307,9 +302,9 @@
 @media (width >= 1024px) {
   .page__concentration-factors .main-content__articles {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
   }
-  .page__focus-challenges .page__focus-tips {
+  .page__focus-challenges,
+  .page__focus-tips.page__concentration-factorss {
     grid-template-columns: calc((100% - 2 * var(--header-gap)) / 3) 1fr;
   }
   .focus-challenges {

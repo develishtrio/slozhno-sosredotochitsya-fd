@@ -8,7 +8,7 @@
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
+  */ 
   --body-text-color: #353430;
   --main-bg-color: #fff1f7;
   --header-color: #ffc2e6;
@@ -17,12 +17,12 @@
   --title-section-color: #353430;
   --title-article-color: #353430;
   --page-bg-color: #ff8dcb;
+  --shadow-color: #FF8DCB;
   --link-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
   --body-text-color: #353430;
   --main-bg-color: #fff1f7;
   --header-color: #ffc2e6;
@@ -31,6 +31,7 @@
   --title-section-color: #353430;
   --title-article-color: #353430;
   --page-bg-color: #ff8dcb;
+  --shadow-color: #FF8DCB;
   --link-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
 }
@@ -45,6 +46,7 @@
     --title-section-color: #353430;
     --title-article-color: #1a1813;
     --page-bg-color: #ff8dcb;
+    --shadow-color: #FF8DCB;
     --link-color: #ff8dcb;
     --bg-image: url(../images/cover-image-light.png);
   }
@@ -52,4 +54,4 @@
 
 .theme-light .rec {
   display: none;
-}
+} 

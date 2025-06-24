@@ -6,9 +6,7 @@
 :root {
   --font-family: IBM Plex Mono, monospace;
   --main-font-size: 18px;
-  --main-line-height: 130%;
-  --header-gap: 20px;
-  --main-content-gap: 20px;
+  --line-height: 23.4px;
   --font-weight: 400;
   --bold-font-weight: 700;
   --button-text-transform: lowercase;
@@ -19,7 +17,6 @@
   --header-color: #db00ff;
   --button-color: #ff0070;
   --button-hover: #ff007066;
- /* --main-content-color: #ff0070; */
  --title-section-color: #ff0070;
  --title-article-color: #000028;
   --page-bg-color: #ff0070;
@@ -28,5 +25,7 @@
 
   --main-padding: 10px;
   --padding-block: 40px;
-  --main-page-gap: 80px;
-}
+  --main-page-gap: 50px;
+  --header-gap: 20px;
+  --main-content-gap: 20px;
+} 
