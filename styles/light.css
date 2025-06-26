@@ -4,32 +4,19 @@
   переключая тему
 */
 
-  :root .theme-light {
-  --body-text-color: #353430;
-  --main-bg-color: #fff1f7;
-  --header-color: #ffc2e6;
-  --button-color: #353430;
-  --button-hover: #32312d66;
-  --title-section-color: #353430;
-  --title-article-color: #353430;
-  --page-bg-color: #ff8dcb;
-  --shadow-color: #FF8DCB;
-  --link-color: #ff8dcb;
-  --bg-image: url(../images/cover-image-light.png);
-}
-
 .theme-light .page {
   --body-text-color: #353430;
   --main-bg-color: #fff1f7;
   --header-color: #ffc2e6;
   --button-color: #353430;
-  --button-hover: #32312d66;
+  --button-hover: rgba(50, 49, 45, 0.4);
   --title-section-color: #353430;
   --title-article-color: #353430;
   --page-bg-color: #ff8dcb;
-  --shadow-color: #FF8DCB;
+  --shadow-color: #ff8dcb;
   --link-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
+  --visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,16 +25,17 @@
     --main-bg-color: #fff1f7;
     --header-color: #ffc2e6;
     --button-color: #353430;
-    --button-hover: #32312d66;
+    --button-hover: rgba(50, 49, 45, 0.4);
     --title-section-color: #353430;
-    --title-article-color: #1a1813;
+    --title-article-color: #353430;
     --page-bg-color: #ff8dcb;
-    --shadow-color: #FF8DCB;
+    --shadow-color: #ff8dcb;
     --link-color: #ff8dcb;
     --bg-image: url(../images/cover-image-light.png);
+    --visibility: hidden;
   }
 }
 
 .theme-light .rec {
   display: none;
-} 
+}
